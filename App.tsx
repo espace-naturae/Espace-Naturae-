@@ -344,7 +344,7 @@ const App: React.FC = () => {
             <div className="mx-auto text-gray-600 leading-loose font-light space-y-8 text-lg font-sans">
               <p>
                 Chez Espace Naturaē, nous croyons que prendre soin de soi commence par des ingrédients aussi simples et bienveillants que ceux destinés à nourrir notre corps.
-                Basée au Québec, c'est dans cet esprit qu'est née Espace Naturaē: un désir profond de revenir à l'essentiel. La marque propose des formulations épurées à base d'ingrédients naturels. Conçus à la main en petites quantités, nos produits offrent fraîcheur, efficacité et une approche respectueuse du corps et de la peau.
+                Basée au Québec, c'est dans cet esprit qu'est née Espace Naturaē: un désir de redonner un sens aux soins quotidiens. La marque propose des formulations épurées à base d'ingrédients naturels. Conçus à la main en petites quantités, nos produits offrent fraîcheur, efficacité et une approche respectueuse du corps et de la peau.
               </p>
               <img 
                 src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1200" 
