@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView, cartCount 
               onClick={() => setView('glossary')}
               className={`text-sm tracking-widest uppercase transition-colors ${currentView === 'glossary' ? 'text-eucalyptus font-semibold' : 'text-gray-500 hover:text-eucalyptus'}`}
             >
-              Glossaire Botanique
+              Glossaire des ingrédients
             </button>
             <button 
               onClick={() => setView('about')}
