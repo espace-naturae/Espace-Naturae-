@@ -42,7 +42,8 @@ const App: React.FC = () => {
   }, [view]);
 
   const addToCart = (product: Product, option?: ProductOption, quantityToAdd: number = 1) => {
-    if (product.price === 'Bientôt disponible') return;
+    const priceToUse = option ? option.price : product.price;
+    if (priceToUse === 'Bientôt disponible') return;
 
     setCart(prev => {
       const existing = prev.find(item => 
@@ -58,7 +59,6 @@ const App: React.FC = () => {
         );
       }
       
-      const priceToUse = option ? option.price : product.price;
       const numericPrice = typeof priceToUse === 'string' 
         ? parseFloat(priceToUse.replace(/[^0-9.]/g, '')) 
         : priceToUse;
@@ -240,7 +240,7 @@ const App: React.FC = () => {
       case 'product':
         if (!selectedProduct) { setView('shop'); return null; }
         const currentPriceLabel = activeOption ? activeOption.price : selectedProduct.price;
-        const isAvailable = selectedProduct.price !== 'Bientôt disponible';
+        const isAvailable = currentPriceLabel !== 'Bientôt disponible';
         
         return (
           <section className="max-w-7xl mx-auto px-4 py-20 min-h-[80vh]">
@@ -271,7 +271,7 @@ const App: React.FC = () => {
                               : 'border-gray-200 text-gray-600 hover:border-eucalyptus'
                           }`}
                         >
-                          {opt.label} {opt.price !== selectedProduct.price && `- ${opt.price}$`}
+                          {opt.label} {typeof opt.price === 'number' ? `- ${opt.price}$` : (opt.price !== selectedProduct.price ? `- ${opt.price}` : '')}
                         </button>
                       ))}
                     </div>

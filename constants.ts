@@ -10,8 +10,8 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Suif de bœuf bio', 'Huile de rose musquée', 'Macérat de calendula bio', 'Huile de jojoba'],
     image: '<iframe src="https://drive.google.com/file/d/1_Q4Oyf_kzpLbiW9n8_nhsObnEs-1kHFW/preview" width="640" height="480" allow="autoplay"></iframe>',
     options: [
-      { label: '15g', price: 18 },
-      { label: '30g', price: 30 }
+      { label: '15g', price: 22 },
+      { label: '30g', price: 40 }
     ],
     inci: "Tallow, Simmondsia Chinensis (Jojoba) Seed Oil*, Rosa Canina Fruit Oil*, Calendula Officinalis Flower*, Cera Alba (Beeswax)*, Tocopherol.\n* Ingredients issus de l’agriculture biologique"
   },
@@ -24,8 +24,8 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Suif de boeuf bio', 'Huile de jojoba bio', 'Huile de ricin bio', 'Fleurs de rose et lavande bio'],
     image: '<iframe src="https://drive.google.com/file/d/1vBGIUp3kmvvW2NcB5_iH5dCM37CwgW7D/preview" width="640" height="480" allow="autoplay"></iframe>',
     options: [
-      { label: '30g', price: 22 },
-      { label: '60g', price: 40 }
+      { label: '30g', price: 18 },
+      { label: '60g', price: 32 }
     ],
     inci: "Tallow, Simmondsia Chinensis (Jojoba) Seed Oil*, Ricinus Communis (Castor) Seed Oil*, Rosa Damascena Flower*, Lavandula Angustifolia (Lavender) Flower*, Maranta Arundinacea Root Powder, Tocopherol, Parfum (Essential Oil Blend).\n* Ingredients issus de l’agriculture biologique"
   },
@@ -33,24 +33,25 @@ export const PRODUCTS: Product[] = [
     id: '3',
     name: 'Baume à Lèvres',
     category: 'Soin des Lèvres',
-    price: 'Bientôt disponible',
-    description: 'Une protection onctueuse pour vos lèvres, déclinée en plusieurs saveurs botaniques. Nos baumes sont conçus à la main avec des beurres végétaux précieux et de la cire d\'abeille locale pour une nutrition intense. Ce produit sera bientôt disponible.',
+    price: 'à partir de 5$',
+    description: 'Une protection onctueuse pour vos lèvres, déclinée en plusieurs saveurs botaniques. Nos baumes sont conçus à la main avec des beurres végétaux précieux et de la cire d\'abeille locale pour une nutrition intense.',
     ingredients: ['Beurre de mangue', 'Beurre de kokum', 'Huile de ricin bio', 'Cire d\'abeille bio'],
     image: '<iframe src="https://drive.google.com/file/d/1qrV2qyM-inabHAwwcIIsKUUD9a-IhQbe/preview" width="640" height="480" allow="autoplay"></iframe>',
+    options: [
+      { label: 'Le Naturel', price: 5 },
+      { label: 'Menthe', price: 7 },
+      { label: 'Zeste de café', price: 'Bientôt disponible' }
+    ],
     inci: "Le Naturel\nINCI: Mangifera Indica (Mango) Seed Butter, Garcinia Indica (Kokum) Seed Butter, Ricinus Communis (Castor) Seed Oil*, Cera Alba (Beeswax)*\n\nMenthe\nINCI: Mangifera Indica (Mango) Seed Butter, Garcinia Indica (Kokum) Seed Butter, Ricinus Communis (Castor) Seed Oil*, Mentha Piperita (Peppermint) Leaf*, Cera Alba (Beeswax)*, Parfum (Essential Oil Blend)\n\nZeste de café\nINCI: Mangifera Indica (Mango) Seed Butter, Garcinia Indica (Kokum) Seed Butter, Ricinus Communis (Castor) Seed Oil, Cera Alba (Beeswax), Vanilla Planifolia Fruit, Coffea Arabica (Coffee) Seed*, Citrus Sinensis Peel Oil Expressed\n\n* Ingredients issus de l’agriculture biologique"
   },
   {
     id: '4',
     name: 'Huile Élixir',
     category: 'Visage & Corps',
-    price: 'à partir de 28$',
-    description: 'Nos élixirs pour le visage sont des soins concentrés, formulés à partir d’huiles végétales soigneusement sélectionnées et infusées de plantes reconnues pour leurs bienfaits cutanés. Chaque élixir est conçu pour nourrir la peau en profondeur, soutenir la barrière cutanée et rétablir l’équilibre naturel du teint. Ce produit est actuellement en cours de développement et plus de détails suivront.',
+    price: 'Bientôt disponible',
+    description: 'Nos élixirs pour le visage sont des soins concentrés, formulés à partir d’huiles végétales soigneusement sélectionnées et infusées de plantes reconnues pour leurs bienfaits cutanés. Chaque élixir est conçu pour nourrir la peau en profondeur, soutenir la barrière cutanée et rétablir l’équilibre naturel du teint. Ce produit est actuellement en cours de développement et sera disponible prochainement.',
     ingredients: ['Huile végétales biologiques', 'Plantes biologiques'],
-    image: '<iframe src="https://drive.google.com/file/d/1vUUUSk4pqKSnWT2dcwu8MvBzzmHXg2vL/preview" width="640" height="480" allow="autoplay"></iframe>',
-    options: [
-      { label: '15ml', price: 28 },
-      { label: '30ml', price: 49 }
-    ]
+    image: '<iframe src="https://drive.google.com/file/d/1vUUUSk4pqKSnWT2dcwu8MvBzzmHXg2vL/preview" width="640" height="480" allow="autoplay"></iframe>'
   }
 ];
 
